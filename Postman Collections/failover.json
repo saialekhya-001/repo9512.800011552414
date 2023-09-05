@@ -12,6 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "17fcfb0b-f474-45ee-87ec-f79cedd8283b",
 						"exec": [
 							"pm.test(\"An access token is returned\", () => {",
 							"    pm.expect(pm.response.json()).to.have.property('token')",
@@ -20,13 +21,17 @@
 							"    // This lets us use it in other requests",
 							"    pm.collectionVariables.set('token', pm.response.json().token)",
 							"})",
-							""
+							"",
+							"// console.log"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "c1814cc7-0638-4ac9-872f-b513b068685b",
+			"id": "c1814cc7-0638-4ac9-872f-b513b068685b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -51,7 +56,7 @@
 					}
 				}
 			],
-			"_postman_id": "ba8281c2-fd60-4867-8368-bb7813da6411",
+			"id": "ba8281c2-fd60-4867-8368-bb7813da6411",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -101,7 +106,7 @@
 					}
 				}
 			],
-			"_postman_id": "06f3af14-5f85-4bc1-bf75-274dcb33b7ec",
+			"id": "06f3af14-5f85-4bc1-bf75-274dcb33b7ec",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -148,16 +153,14 @@
 	],
 	"variable": [
 		{
-			"id": "57bdfc0f-430e-4656-b6b9-a3523f2d813a",
+			"id": "3952bf74-3097-449d-a8c6-5e55961001df",
 			"key": "token",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "462b08af-1700-43ad-898f-04e354454f0b",
+			"id": "26782bfc-22e7-48ae-9f2f-974f7178e2b4",
 			"key": "baseUrl",
-			"value": "https://postman-integration-testing.glitch.me/",
-			"type": "string"
+			"value": "https://postman-integration-testing.glitch.me/"
 		}
 	]
 }
